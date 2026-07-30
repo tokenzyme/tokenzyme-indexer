@@ -1,0 +1,58 @@
+{
+  "name": "tokenzyme-indexer",
+  "version": "1.0.0",
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rm -Rf ./lib && tsc",
+    "format": "prettier --write './**/*.{ts,cts,mts,js,cjs,mjs,json,yml,yaml}'",
+    "generate:abi": "rm -Rf ./src/generated/abi && squid-evm-typegen ./src/generated/abi ./abi/*",
+    "generate:models": "rm -Rf ./src/model && squid-typeorm-codegen && node ./scripts/fixEntities.mjs",
+    "image:build": "docker buildx build --platform=linux/amd64 --provenance=false -t \"${DOCKER_IMAGE:-tokenzyme-indexer:latest}\" .",
+    "image:publish": "docker push \"${DOCKER_IMAGE:-tokenzyme-indexer:latest}\"",
+    "lint": "eslint .",
+    "start:dev": "node -r ts-node/register --watch --env-file=.env ./src/index.ts",
+    "start:prod": "node ./lib/index.js"
+  },
+  "dependencies": {
+    "@subsquid/big-decimal": "1.0.0",
+    "@subsquid/evm-abi": "0.3.1",
+    "@subsquid/evm-codec": "0.3.0",
+    "@subsquid/evm-processor": "1.27.3",
+    "@subsquid/typeorm-store": "1.5.1",
+    "ethers": "6.15.0",
+    "lodash": "4.17.21",
+    "pg": "8.16.3",
+    "pino": "9.9.0",
+    "pino-pretty": "13.1.1",
+    "reflect-metadata": "0.2.2",
+    "socket.io": "4.8.1",
+    "typeorm": "0.3.26"
+  },
+  "devDependencies": {
+    "@subsquid/evm-typegen": "4.4.0",
+    "@subsquid/typeorm-codegen": "2.0.2",
+    "@types/lodash": "4.17.20",
+    "@types/node": "24.3.0",
+    "@types/ws": "8.18.1",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-config-prettier": "9.1.2",
+    "eslint-import-resolver-typescript": "3.10.1",
+    "eslint-plugin-deprecation": "2.0.0",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-prettier": "5.5.4",
+    "prettier": "3.6.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.2"
+  }
+}

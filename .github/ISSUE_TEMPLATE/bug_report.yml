@@ -1,0 +1,55 @@
+name: Bug report
+description: Report incorrect indexing, missing data, or a crash
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not use this form for security vulnerabilities.** Report those privately —
+        see [SECURITY.md](https://github.com/tokenzyme/tokenzyme-indexer/blob/main/SECURITY.md).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the incorrect behaviour and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      options:
+        - mainnet
+        - testnet
+        - testnet-legacy
+        - fork
+    validations:
+      required: true
+
+  - type: input
+    id: block
+    attributes:
+      label: Block or transaction hash
+      description: If a specific event was mis-indexed, which one?
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant output. Set LOG_LEVEL=debug for more detail.
+      render: shell
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or version
+      placeholder: 'e.g. main @ a1b2c3d'

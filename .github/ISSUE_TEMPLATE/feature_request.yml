@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a change to the indexer, its data model, or its tooling
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the limitation you are hitting, not just the solution you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Does this change schema.graphql?
+      description: Entity changes ripple into tokenzyme-core's Prisma schema and both clients.
+      options:
+        - 'No'
+        - 'Yes — adds fields or entities'
+        - 'Yes — changes or removes existing fields'
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

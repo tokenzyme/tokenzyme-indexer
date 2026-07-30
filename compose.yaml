@@ -1,0 +1,34 @@
+# Reads values from the .env file next to this one. See .env.template.
+#
+# Postgres itself is defined in tokenzyme-core's compose.yaml — the indexer connects
+# to that same container over the shared "tokenzyme" network, which is declared
+# external here. Start core's stack first, or create the network by hand:
+#
+#   docker network create tokenzyme
+
+networks:
+  tokenzyme:
+    external: true
+
+services:
+  tokenzyme-indexer:
+    build: .
+    container_name: tokenzyme-indexer
+    restart: always
+    ports:
+      - 3002:3002
+    networks:
+      - tokenzyme
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      LOG_LEVEL: ${LOG_LEVEL}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+      # No "?schema=" — TypeORM writes the on-chain tables into "public",
+      # where tokenzyme-core reads them from.
+      DB_URL: postgresql://postgres:${POSTGRES_PASSWORD:-postgres}@tokenzyme-postgres:5432/tokenzyme
+      RPC_RATE_LIMIT: ${RPC_RATE_LIMIT}
+      FINALITY_CONFIRMATION: ${FINALITY_CONFIRMATION}
+      FROM_BLOCK: ${FROM_BLOCK}
+      NETWORK: ${NETWORK}
+      LAUNCHPAD_ADDRESS: ${LAUNCHPAD_ADDRESS}
+      RPC_URL: ${RPC_URL}

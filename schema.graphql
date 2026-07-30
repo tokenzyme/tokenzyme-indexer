@@ -1,0 +1,59 @@
+type Account @entity {
+  id: ID!
+}
+
+type Token @entity {
+  id: ID!
+  creatorId: String!
+  name: String!
+  symbol: String!
+  description: String!
+  logoUrl: String!
+  websiteUrl: String
+  totalSupply: BigDecimal!
+  bondingCurveSupply: BigDecimal!
+  ethReserve: BigDecimal!
+  reserve: BigDecimal!
+  price: BigDecimal!
+  finalPrice: BigDecimal!
+  dexPoolAddress: String
+  migratedAt: DateTime
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+type SocialMedia @entity {
+  id: ID!
+  xUrl: String
+  telegramUrl: String
+  discordUrl: String
+  redditUrl: String
+  facebookUrl: String
+  instagramUrl: String
+  createdAt: DateTime!
+}
+
+type DexLiquidity @entity {
+  id: ID!
+  tokenId: Int!
+  ethLiquidity: BigDecimal!
+  tokenLiquidity: BigDecimal!
+  createdAt: DateTime!
+}
+
+enum TradeType {
+  BUY
+  SELL
+}
+
+type Trade @entity {
+  id: ID!
+  tokenId: String!
+  accountId: String!
+  type: TradeType!
+  tokenAmount: BigDecimal!
+  ethAmount: BigDecimal!
+  fee: BigDecimal!
+  avgPrice: BigDecimal!
+  createdAt: DateTime!
+}
