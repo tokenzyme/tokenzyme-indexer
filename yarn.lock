@@ -704,59 +704,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/evm-abi@npm:0.3.1, @subsquid/evm-abi@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@subsquid/evm-abi@npm:0.3.1"
+"@subsquid/evm-abi@npm:1.0.0, @subsquid/evm-abi@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@subsquid/evm-abi@npm:1.0.0"
   dependencies:
-    "@subsquid/evm-codec": "npm:^0.3.0"
-    keccak256: "npm:^1.0.6"
-  checksum: 10c0/96aca1c9022ed330b78368f2b4c66ff48ad9630808ee8633e939d9fb5c3f4cced70684fb0b212756d3726ddd2cef58910351597de745e573a1fc652ba603baf3
+    "@subsquid/evm-codec": "npm:^1.0.0"
+    "@subsquid/util-internal-hex": "npm:^1.2.3"
+    js-sha3: "npm:^0.9.3"
+  checksum: 10c0/10b3c21ab6a29768918ea9a8da77860b728d85a26c88a44d8bb4d145b20f97263c1ce6893eff17a417a7a13e0e4a3df756059627365cea798d595fbfeaa9e019
   languageName: node
   linkType: hard
 
-"@subsquid/evm-codec@npm:0.3.0, @subsquid/evm-codec@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@subsquid/evm-codec@npm:0.3.0"
+"@subsquid/evm-codec@npm:1.0.0, @subsquid/evm-codec@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@subsquid/evm-codec@npm:1.0.0"
   dependencies:
-    "@subsquid/util-internal-hex": "npm:^1.2.2"
-  checksum: 10c0/20be7e36a63e35e95a5079ba77d76e6dd8ffcd64306f24706dd4736c0b3f48abc93a3a976d800f6fd894c50ffec6ade1b028e1533965ed8898be9e9523001b1b
+    "@subsquid/util-internal-hex": "npm:^1.2.3"
+  checksum: 10c0/923f9e5eb15d7bb8ade3f631c1b34a03e4e7df10e0354244d490484739ced22b25b620a043e90c67df56cfc48c915a4272482f6c1cff67506cdfc5894b87a2ce
   languageName: node
   linkType: hard
 
-"@subsquid/evm-processor@npm:1.27.3":
-  version: 1.27.3
-  resolution: "@subsquid/evm-processor@npm:1.27.3"
+"@subsquid/evm-processor@npm:1.30.1":
+  version: 1.30.1
+  resolution: "@subsquid/evm-processor@npm:1.30.1"
   dependencies:
-    "@subsquid/http-client": "npm:^1.6.1"
-    "@subsquid/logger": "npm:^1.4.0"
-    "@subsquid/rpc-client": "npm:^4.13.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
-    "@subsquid/util-internal-archive-client": "npm:^0.1.2"
-    "@subsquid/util-internal-hex": "npm:^1.2.2"
-    "@subsquid/util-internal-ingest-tools": "npm:^1.1.4"
-    "@subsquid/util-internal-processor-tools": "npm:^4.2.1"
+    "@subsquid/http-client": "npm:^1.8.1"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/rpc-client": "npm:^4.15.0"
+    "@subsquid/util-internal": "npm:^3.3.0"
+    "@subsquid/util-internal-archive-client": "npm:^0.2.1"
+    "@subsquid/util-internal-hex": "npm:^1.2.3"
+    "@subsquid/util-internal-ingest-tools": "npm:^1.1.5"
+    "@subsquid/util-internal-processor-tools": "npm:^4.4.0"
     "@subsquid/util-internal-range": "npm:^0.3.0"
-    "@subsquid/util-internal-validation": "npm:^0.8.0"
+    "@subsquid/util-internal-validation": "npm:^0.9.0"
     "@subsquid/util-timeout": "npm:^2.3.2"
-  checksum: 10c0/adf880aea8d49ed2ed422436605cceba5de7f214eb55083cae961938c8c2ee4b2b50372a1027fc388f473b45952627d4b6cf94089dc8c5cb8c2b98fb43e93b99
+  checksum: 10c0/fa8d34729869e8d674931eaff29b28fc0859508d5421293dd82bdcfa05d6912cc792e66f7b744b60e76330710378ceb7132d9e93b49f3c2f2d4b9b538e92a096
   languageName: node
   linkType: hard
 
-"@subsquid/evm-typegen@npm:4.4.0":
-  version: 4.4.0
-  resolution: "@subsquid/evm-typegen@npm:4.4.0"
+"@subsquid/evm-typegen@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@subsquid/evm-typegen@npm:5.0.0"
   dependencies:
-    "@subsquid/evm-abi": "npm:^0.3.1"
-    "@subsquid/evm-codec": "npm:^0.3.0"
-    "@subsquid/http-client": "npm:^1.6.0"
-    "@subsquid/logger": "npm:^1.4.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/evm-abi": "npm:^1.0.0"
+    "@subsquid/evm-codec": "npm:^1.0.0"
+    "@subsquid/http-client": "npm:^1.8.1"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/util-internal": "npm:^3.3.0"
     "@subsquid/util-internal-code-printer": "npm:^1.2.2"
     "@subsquid/util-internal-commander": "npm:^1.4.0"
     commander: "npm:^11.1.0"
+    fastest-levenshtein: "npm:^1.0.16"
   bin:
     squid-evm-typegen: bin/run.js
-  checksum: 10c0/5592d529ee4d2cc2739c0e2eaedd57c202c2cadb27a15c671f196cdd796e4f7f609efa39402664344b947c91e4bd259ce6c8bf0a5e69a737494c5765dc97ec03
+  checksum: 10c0/b67990936eace6dbeeacc0cd17c8c209e7e593fa04dc81c2cbb43f583fea44c98d7aabb0b9cd7f2de2180ea3fde3223d269247fd9b88e77c2ac3bc3b94ca06f9
   languageName: node
   linkType: hard
 
@@ -767,25 +769,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/http-client@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "@subsquid/http-client@npm:1.6.0"
+"@subsquid/http-client@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@subsquid/http-client@npm:1.8.1"
   dependencies:
-    "@subsquid/logger": "npm:^1.3.3"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/util-internal": "npm:^3.3.0"
     node-fetch: "npm:^3.3.2"
-  checksum: 10c0/bd0b03a7537119cd4b4bf6177abc03dc035c474ecf8c8e1ccdf56627c47b21281139e40678be90dfbdd5a571a5934ccc4905639a151d5e8148ddd52fdc9e7e93
-  languageName: node
-  linkType: hard
-
-"@subsquid/http-client@npm:^1.6.1":
-  version: 1.6.1
-  resolution: "@subsquid/http-client@npm:1.6.1"
-  dependencies:
-    "@subsquid/logger": "npm:^1.4.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
-    node-fetch: "npm:^3.3.2"
-  checksum: 10c0/0631664e118da667891192d79cc3816cc536294b3eb7b9931bd94c0c716ca524127440a4840e55b7843cca8d6666370e4e24a1833b2b146c99de8ddbeb7e9bff
+  checksum: 10c0/2e88a899544e962d4c7436acadf98b300af1e32d6651baeb58594cb451060d9ae5df94e7e17d542e4f003994394cba7f86fadcd37cc1601af513a975750e09b6
   languageName: node
   linkType: hard
 
@@ -800,19 +791,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/openreader@npm:^5.0.0":
-  version: 5.3.0
-  resolution: "@subsquid/openreader@npm:5.3.0"
+"@subsquid/logger@npm:^1.5.0, @subsquid/logger@npm:^1.6.0":
+  version: 1.6.0
+  resolution: "@subsquid/logger@npm:1.6.0"
+  dependencies:
+    "@subsquid/util-internal-hex": "npm:^1.2.3"
+    "@subsquid/util-internal-json": "npm:^1.2.3"
+    supports-color: "npm:^8.1.1"
+  checksum: 10c0/d0ff85f16db616affac9775879ef16aaebd9289e5b2ecc41fda4ecbeb6cd1ecc7c44934a159c159fdd16e4cce0792aea683547ac2ddf62fbb542255bccd6d081
+  languageName: node
+  linkType: hard
+
+"@subsquid/openreader@npm:^5.5.0":
+  version: 5.5.1
+  resolution: "@subsquid/openreader@npm:5.5.1"
   dependencies:
     "@graphql-tools/merge": "npm:^9.0.1"
     "@subsquid/apollo-server-core": "npm:^3.14.0"
     "@subsquid/apollo-server-express": "npm:^3.14.1"
     "@subsquid/graphiql-console": "npm:^0.3.0"
-    "@subsquid/logger": "npm:^1.4.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/util-internal": "npm:^3.3.1"
     "@subsquid/util-internal-commander": "npm:^1.4.0"
-    "@subsquid/util-internal-hex": "npm:^1.2.2"
-    "@subsquid/util-internal-http-server": "npm:^2.0.0"
+    "@subsquid/util-internal-hex": "npm:^1.2.3"
+    "@subsquid/util-internal-http-server": "npm:^2.0.1"
     "@subsquid/util-naming": "npm:^1.3.0"
     commander: "npm:^11.1.0"
     deep-equal: "npm:^2.2.3"
@@ -830,37 +832,38 @@ __metadata:
       optional: true
   bin:
     openreader: bin/main.js
-  checksum: 10c0/9e2dc482941af2d3593489a5b17ceedeabe57897ccd55b61738c166fa2e336e2996560236d0dcb57324d788ba119ec2cb8010e5a044562d05d016f48d8af7b5a
+  checksum: 10c0/ae9e362e29c0defa8ef0638bb956488c08e1bb88396dcf4c77d2ab78938d1e4908f8ecb0eea1156feac94b2c33ae668854a086be9ba0227424725fb216b5e6ea
   languageName: node
   linkType: hard
 
-"@subsquid/rpc-client@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "@subsquid/rpc-client@npm:4.13.0"
+"@subsquid/rpc-client@npm:^4.15.0":
+  version: 4.16.0
+  resolution: "@subsquid/rpc-client@npm:4.16.0"
   dependencies:
-    "@subsquid/http-client": "npm:^1.6.1"
-    "@subsquid/logger": "npm:^1.4.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/http-client": "npm:^1.8.1"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/util-internal": "npm:^3.3.1"
     "@subsquid/util-internal-binary-heap": "npm:^1.0.0"
     "@subsquid/util-internal-counters": "npm:^1.3.2"
     "@subsquid/util-internal-json-fix-unsafe-integers": "npm:^0.0.0"
     websocket: "npm:^1.0.34"
-  checksum: 10c0/c77e4824d8fbbdba5603715e6fe54da6e5166021adb91ec8fd43f7d484ebd0b5692943978c1a130f673e675b543ae3519498b66d3a1aa5b313664cb1d92387ae
+  checksum: 10c0/0a65ce58f27d81478a9b1f31fee38b959c7f558f0024e5a5f173e46e89d0adc916f16a7c01356678a4261af3d1734b42ef776f1f1ebffec3970ce13757bbaa8b
   languageName: node
   linkType: hard
 
-"@subsquid/typeorm-codegen@npm:2.0.2":
-  version: 2.0.2
-  resolution: "@subsquid/typeorm-codegen@npm:2.0.2"
+"@subsquid/typeorm-codegen@npm:2.4.0":
+  version: 2.4.0
+  resolution: "@subsquid/typeorm-codegen@npm:2.4.0"
   dependencies:
-    "@subsquid/openreader": "npm:^5.0.0"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/openreader": "npm:^5.5.0"
+    "@subsquid/util-internal": "npm:^3.3.1"
     "@subsquid/util-internal-code-printer": "npm:^1.2.2"
     "@subsquid/util-naming": "npm:^1.3.0"
     commander: "npm:^11.1.0"
   bin:
     squid-typeorm-codegen: bin/run.js
-  checksum: 10c0/a4a90506124c291eba6c6883104d3da5a9ad3abd18721aabaf98647b2bf66832d7b7f092636babbafbb0c8e9e9962237d5701ce9593316ba91458dff864a52fc
+  checksum: 10c0/c8ea7e2fc5cfbe78b1d5197c46240b288b16bde229b90f7e72e763b1ced737cdb284f0df7b3a8c2902b7ed824c683edc4d0b1e5f001d12ade5f2c262e5ee6842
   languageName: node
   linkType: hard
 
@@ -880,32 +883,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/typeorm-store@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@subsquid/typeorm-store@npm:1.5.1"
+"@subsquid/typeorm-store@npm:1.9.1":
+  version: 1.9.1
+  resolution: "@subsquid/typeorm-store@npm:1.9.1"
   dependencies:
     "@subsquid/typeorm-config": "npm:^4.1.1"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/util-internal": "npm:^3.3.0"
   peerDependencies:
     "@subsquid/big-decimal": ^1.0.0
     typeorm: ^0.3.17
-  checksum: 10c0/6e8f84b75d8cc8cc0a8cc4773db4848fb4e510ae36d6d35f2902ab5d41489d50a7d5e335e97cfee213ef658d6a0492c27a8f89d3774cded1502a7a9dfbcac263
+  checksum: 10c0/6b8376caa0aced962e2b3d3b6174e8177af8f6cba63c5653a1e60828484abe682ad169cc0d5726afcea1a82f18c06cb616af0415aa3f61f705b79a5a73ce52e9
   languageName: node
   linkType: hard
 
-"@subsquid/util-internal-archive-client@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@subsquid/util-internal-archive-client@npm:0.1.2"
+"@subsquid/util-internal-archive-client@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@subsquid/util-internal-archive-client@npm:0.2.1"
   dependencies:
-    "@subsquid/util-internal": "npm:^3.1.0"
+    "@subsquid/util-internal": "npm:^3.2.0"
     "@subsquid/util-internal-range": "npm:^0.3.0"
   peerDependencies:
-    "@subsquid/http-client": ^1.4.0
-    "@subsquid/logger": ^1.3.3
+    "@subsquid/http-client": ^1.8.0
+    "@subsquid/logger": ^1.5.0
   peerDependenciesMeta:
     "@subsquid/logger":
       optional: true
-  checksum: 10c0/0556e07ba86f31a32e3b187c3c4e5527b8fab3054c3d01a6b1cb45f46065f74ab0f70685e09bbd99945e131703538bf4c95b1fd41b74a722faaf7ff4034dc802
+  checksum: 10c0/7dc5436d8a3b7dce27f9d90b7654218088f3788c80786edf193bc59adf6bbf5f25aa06ffdf16fff287d664cc6c82f0806fa6ce61a67665a7769c3fc31a9cb930
   languageName: node
   linkType: hard
 
@@ -946,6 +949,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@subsquid/util-internal-hex@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@subsquid/util-internal-hex@npm:1.2.3"
+  checksum: 10c0/cd84c1893f93b4f408cec09546979d9216dd1e6f6bee3234af66136547c7dfa9e416be1e1e31896be4d17fcd386c3012a9dfa2c906f76a47e8fd26b3f4635959
+  languageName: node
+  linkType: hard
+
 "@subsquid/util-internal-http-server@npm:^2.0.0":
   version: 2.0.0
   resolution: "@subsquid/util-internal-http-server@npm:2.0.0"
@@ -956,19 +966,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/util-internal-ingest-tools@npm:^1.1.4":
-  version: 1.1.4
-  resolution: "@subsquid/util-internal-ingest-tools@npm:1.1.4"
+"@subsquid/util-internal-http-server@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@subsquid/util-internal-http-server@npm:2.0.1"
   dependencies:
-    "@subsquid/logger": "npm:^1.3.3"
-    "@subsquid/util-internal": "npm:^3.2.0"
+    "@subsquid/logger": "npm:^1.4.0"
+    stoppable: "npm:^1.1.0"
+  checksum: 10c0/026c37e44e07523a0eebf8149a4a4d94a4a0542f82dd488bb0914ed9528b118a3b0ce75bc92ff6943b21b830a3e70aeab114f38e917cbe213e9af2430258b8d8
+  languageName: node
+  linkType: hard
+
+"@subsquid/util-internal-ingest-tools@npm:^1.1.5":
+  version: 1.2.0
+  resolution: "@subsquid/util-internal-ingest-tools@npm:1.2.0"
+  dependencies:
+    "@subsquid/logger": "npm:^1.6.0"
+    "@subsquid/util-internal": "npm:^3.3.0"
     "@subsquid/util-internal-range": "npm:^0.3.0"
   peerDependencies:
-    "@subsquid/util-internal-archive-client": ^0.1.2
+    "@subsquid/util-internal-archive-client": ^0.2.1
   peerDependenciesMeta:
     "@subsquid/util-internal-archive-client":
       optional: true
-  checksum: 10c0/fa32fb1db925de6ff2cc252dee8396e72ed5a220394c1e1839841ffb17f80b7f508b05854792c908623746ac7df36cf1e957778ada244f3983d14be68569741c
+  checksum: 10c0/355fe52890a75c34ebafcd48da9331dc37aea44337ab8ac05b56166835a77d73601d31f6399951780de721e41e1ae908c0e6dd9dbc5e5e5071bc718921e89948
   languageName: node
   linkType: hard
 
@@ -988,18 +1008,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/util-internal-processor-tools@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "@subsquid/util-internal-processor-tools@npm:4.2.1"
+"@subsquid/util-internal-processor-tools@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "@subsquid/util-internal-processor-tools@npm:4.4.0"
   dependencies:
-    "@subsquid/logger": "npm:^1.3.3"
+    "@subsquid/logger": "npm:^1.5.0"
     "@subsquid/util-internal": "npm:^3.2.0"
     "@subsquid/util-internal-counters": "npm:^1.3.2"
     "@subsquid/util-internal-prometheus-server": "npm:^1.3.0"
     "@subsquid/util-internal-range": "npm:^0.3.0"
     "@subsquid/util-internal-squid-id": "npm:^0.0.0"
     prom-client: "npm:^14.2.0"
-  checksum: 10c0/27cf5f711daffecf33d00c7823f6dc79930a465dc6b52b012703ab538b6e47e24a9fd7ea50cc5955f08b1dff35522b39db9ee97de76ad9a6e17a249f3cd19762
+  checksum: 10c0/19cd32edb8b08836e208f427da6f2027e01ec91a04b3ff1b90d69fa6ed532ecf676fec7b045e618c4fcab435c2608e674869febe58159b554eb7d335ed146184
   languageName: node
   linkType: hard
 
@@ -1038,15 +1058,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/util-internal-validation@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@subsquid/util-internal-validation@npm:0.8.0"
+"@subsquid/util-internal-validation@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@subsquid/util-internal-validation@npm:0.9.0"
   peerDependencies:
-    "@subsquid/logger": ^1.4.0
+    "@subsquid/logger": ^1.6.0
   peerDependenciesMeta:
     "@subsquid/logger":
       optional: true
-  checksum: 10c0/768e54989e90f631344f6be83bceee9d0644ee5525ec0f9753562bcc39779dea23e43ab33015926b94c3bf76f6fd9b670bf82b606a3d51c01f4c6e17cca9261b
+  checksum: 10c0/465dcf878b8d7745ab180f700de3c534248f19a9499ccc63544626b972630aa5c3ef99406ac7f69c305b9263a1a73e982020b2e033736e1e67d05db53a7b5912
   languageName: node
   linkType: hard
 
@@ -1054,6 +1074,13 @@ __metadata:
   version: 3.2.0
   resolution: "@subsquid/util-internal@npm:3.2.0"
   checksum: 10c0/955366129772c558821351b85d025f58a56c6cdc68ab2266659d78681bd97e0a14c3c4c503b536592cb31d973d09b4578700cf6f4a3758b8e1e9b27bf4afc4fb
+  languageName: node
+  linkType: hard
+
+"@subsquid/util-internal@npm:^3.3.0, @subsquid/util-internal@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@subsquid/util-internal@npm:3.3.1"
+  checksum: 10c0/d522865faeb44f4c0998518746d4a26da11d4c6799e04e5e5b95c85d05567ebad9797305eafcb5888832e7553b0cb0899fb75dbabe5221599492d4bca9479c45
   languageName: node
   linkType: hard
 
@@ -1993,13 +2020,6 @@ __metadata:
   version: 1.0.2
   resolution: "bintrees@npm:1.0.2"
   checksum: 10c0/132944b20c93c1a8f97bf8aa25980a76c6eb4291b7f2df2dbcd01cb5b417c287d3ee0847c7260c9f05f3d5a4233aaa03dec95114e97f308abe9cc3f72bed4a44
-  languageName: node
-  linkType: hard
-
-"bn.js@npm:^5.2.0":
-  version: 5.2.2
-  resolution: "bn.js@npm:5.2.2"
-  checksum: 10c0/cb97827d476aab1a0194df33cd84624952480d92da46e6b4a19c32964aa01553a4a613502396712704da2ec8f831cf98d02e74ca03398404bd78a037ba93f2ab
   languageName: node
   linkType: hard
 
@@ -3313,6 +3333,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fastest-levenshtein@npm:^1.0.16":
+  version: 1.0.16
+  resolution: "fastest-levenshtein@npm:1.0.16"
+  checksum: 10c0/7e3d8ae812a7f4fdf8cad18e9cde436a39addf266a5986f653ea0d81e0de0900f50c0f27c6d5aff3f686bcb48acbd45be115ae2216f36a6a13a7dbbf5cad878b
+  languageName: node
+  linkType: hard
+
 "fastq@npm:^1.6.0":
   version: 1.19.1
   resolution: "fastq@npm:1.19.1"
@@ -3857,7 +3884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.1, inherits@npm:^2.0.3":
+"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.1":
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 10c0/4e531f648b29039fb7426fb94075e6545faa1eb9fe83c29f0b6d9e7263aceb4289d2d4557db0d428188eeb449cc7c5e77b0a0b2c4e248ff2a65933a0dee49ef2
@@ -4205,6 +4232,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"js-sha3@npm:^0.9.3":
+  version: 0.9.3
+  resolution: "js-sha3@npm:0.9.3"
+  checksum: 10c0/6976feaf79842e39b87d17e41c5bd397240a5d68920ea911fdfb3615eea29f72c6067a5aa19e38989a29b3031ff39834ec9fb2ab066c59368751296629a798f1
+  languageName: node
+  linkType: hard
+
 "js-yaml@npm:^4.1.0":
   version: 4.1.0
   resolution: "js-yaml@npm:4.1.0"
@@ -4252,29 +4286,6 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: 10c0/9ee316bf21f000b00752e6c2a3b79ecf5324515a5c60ee88983a1910a45426b643a4f3461657586e8aeca87aaf96f0a519b0516d2ae527a6c3e7eed80f68717f
-  languageName: node
-  linkType: hard
-
-"keccak256@npm:^1.0.6":
-  version: 1.0.6
-  resolution: "keccak256@npm:1.0.6"
-  dependencies:
-    bn.js: "npm:^5.2.0"
-    buffer: "npm:^6.0.3"
-    keccak: "npm:^3.0.2"
-  checksum: 10c0/2a3f1e281ffd65bcbbae2ee8d62e27f0336efe6f16b7ed9932ad642ed398da62ccbc3d38dcdf43bd2fad9885f02df501dc77a900c358644df296396ed194056f
-  languageName: node
-  linkType: hard
-
-"keccak@npm:^3.0.2":
-  version: 3.0.4
-  resolution: "keccak@npm:3.0.4"
-  dependencies:
-    node-addon-api: "npm:^2.0.0"
-    node-gyp: "npm:latest"
-    node-gyp-build: "npm:^4.2.0"
-    readable-stream: "npm:^3.6.0"
-  checksum: 10c0/153525c1c1f770beadb8f8897dec2f1d2dcbee11d063fe5f61957a5b236bfd3d2a111ae2727e443aa6a848df5edb98b9ef237c78d56df49087b0ca8a232ca9cd
   languageName: node
   linkType: hard
 
@@ -4637,15 +4648,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^2.0.0":
-  version: 2.0.2
-  resolution: "node-addon-api@npm:2.0.2"
-  dependencies:
-    node-gyp: "npm:latest"
-  checksum: 10c0/ade6c097ba829fa4aee1ca340117bb7f8f29fdae7b777e343a9d5cbd548481d1f0894b7b907d23ce615c70d932e8f96154caed95c3fa935cfe8cf87546510f64
-  languageName: node
-  linkType: hard
-
 "node-domexception@npm:^1.0.0":
   version: 1.0.0
   resolution: "node-domexception@npm:1.0.0"
@@ -4678,7 +4680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp-build@npm:^4.2.0, node-gyp-build@npm:^4.3.0":
+"node-gyp-build@npm:^4.3.0":
   version: 4.8.4
   resolution: "node-gyp-build@npm:4.8.4"
   bin:
@@ -5333,17 +5335,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.6.0":
-  version: 3.6.2
-  resolution: "readable-stream@npm:3.6.2"
-  dependencies:
-    inherits: "npm:^2.0.3"
-    string_decoder: "npm:^1.1.1"
-    util-deprecate: "npm:^1.0.1"
-  checksum: 10c0/e37be5c79c376fdd088a45fa31ea2e423e5d48854be7a22a58869b4e84d25047b193f6acb54f1012331e1bcd667ffb569c01b99d36b0bd59658fb33f513511b7
-  languageName: node
-  linkType: hard
-
 "real-require@npm:^0.2.0":
   version: 0.2.0
   resolution: "real-require@npm:0.2.0"
@@ -5489,7 +5480,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"safe-buffer@npm:5.2.1, safe-buffer@npm:^5.0.1, safe-buffer@npm:~5.2.0":
+"safe-buffer@npm:5.2.1, safe-buffer@npm:^5.0.1":
   version: 5.2.1
   resolution: "safe-buffer@npm:5.2.1"
   checksum: 10c0/6501914237c0a86e9675d4e51d89ca3c21ffd6a31642efeba25ad65720bce6921c9e7e974e5be91a786b25aa058b5303285d3c15dbabf983a919f5f630d349f3
@@ -5916,15 +5907,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.1.1":
-  version: 1.3.0
-  resolution: "string_decoder@npm:1.3.0"
-  dependencies:
-    safe-buffer: "npm:~5.2.0"
-  checksum: 10c0/810614ddb030e271cd591935dcd5956b2410dd079d64ff92a1844d6b7588bf992b3e1b69b0f4d34a3e06e0bd73046ac646b5264c1987b20d0601f81ef35d731d
-  languageName: node
-  linkType: hard
-
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1, strip-ansi@npm:^6.0.0, strip-ansi@npm:^6.0.1":
   version: 6.0.1
   resolution: "strip-ansi@npm:6.0.1"
@@ -6068,12 +6050,12 @@ __metadata:
   resolution: "tokenzyme-indexer@workspace:."
   dependencies:
     "@subsquid/big-decimal": "npm:1.0.0"
-    "@subsquid/evm-abi": "npm:0.3.1"
-    "@subsquid/evm-codec": "npm:0.3.0"
-    "@subsquid/evm-processor": "npm:1.27.3"
-    "@subsquid/evm-typegen": "npm:4.4.0"
-    "@subsquid/typeorm-codegen": "npm:2.0.2"
-    "@subsquid/typeorm-store": "npm:1.5.1"
+    "@subsquid/evm-abi": "npm:1.0.0"
+    "@subsquid/evm-codec": "npm:1.0.0"
+    "@subsquid/evm-processor": "npm:1.30.1"
+    "@subsquid/evm-typegen": "npm:5.0.0"
+    "@subsquid/typeorm-codegen": "npm:2.4.0"
+    "@subsquid/typeorm-store": "npm:1.9.1"
     "@types/lodash": "npm:4.17.20"
     "@types/node": "npm:24.3.0"
     "@types/ws": "npm:8.18.1"
@@ -6526,13 +6508,6 @@ __metadata:
     node-gyp: "npm:latest"
     node-gyp-build: "npm:^4.3.0"
   checksum: 10c0/23cd6adc29e6901aa37ff97ce4b81be9238d0023c5e217515b34792f3c3edb01470c3bd6b264096dd73d0b01a1690b57468de3a24167dd83004ff71c51cc025f
-  languageName: node
-  linkType: hard
-
-"util-deprecate@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "util-deprecate@npm:1.0.2"
-  checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
   languageName: node
   linkType: hard
 
