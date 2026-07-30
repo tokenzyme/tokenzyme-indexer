@@ -132,7 +132,7 @@ that matter most:
 | --- | --- |
 | `NETWORK` | `mainnet`, `testnet`, `testnet-legacy` or `fork`. Selects the archive gateway. |
 | `RPC_URL` | Must match `NETWORK`. |
-| `LAUNCHPAD_ADDRESS` | The launchpad **proxy** address — see the [contracts README](https://github.com/tokenzyme/tokenzyme-contracts#deployed-addresses). |
+| `LAUNCHPAD_ADDRESS` | The **proxy** address of your own deployment — this project publishes none. See [tokenzyme-contracts](https://github.com/tokenzyme/tokenzyme-contracts#deploying). |
 | `FROM_BLOCK` | The block the proxy was deployed in. Starting from `0` wastes hours on empty history. |
 | `RPC_RATE_LIMIT` | Keep under your provider's limit; public endpoints throttle hard. |
 
