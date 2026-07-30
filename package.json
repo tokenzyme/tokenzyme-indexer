@@ -39,7 +39,7 @@
     "@subsquid/evm-typegen": "4.4.0",
     "@subsquid/typeorm-codegen": "2.0.2",
     "@types/lodash": "4.17.20",
-    "@types/node": "24.3.0",
+    "@types/node": "26.1.2",
     "@types/ws": "8.18.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
