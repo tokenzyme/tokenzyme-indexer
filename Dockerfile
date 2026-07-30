@@ -1,6 +1,6 @@
 # BUILD STEP
 
-FROM node:24-alpine AS build
+FROM node:25-alpine AS build
 
 ARG NODE_ENV="development"
 
@@ -14,7 +14,7 @@ RUN yarn install && yarn build
 
 # MAIN STEP
 
-FROM node:24-alpine
+FROM node:25-alpine
 
 ARG NODE_ENV="production"
 
