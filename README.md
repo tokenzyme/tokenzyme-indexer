@@ -94,18 +94,19 @@ Amounts use `BigDecimal` — token amounts are already scaled down from wei by
 This is the part that surprises people, so it is worth stating plainly.
 
 **The indexer and [`tokenzyme-core`](https://github.com/tokenzyme/tokenzyme-core)
-share one Postgres database.**
+share one Postgres database, and one schema: `public`.**
 
-- The indexer owns the on-chain tables — `accounts`, `tokens`, `trades`,
-  `social_media`, `dex_liquidities` — and writes them into the **`public`** schema
-  via TypeORM.
-- `tokenzyme-core` **reads** those tables (it mirrors them in its Prisma schema) and
-  owns its own tables — comments, signature messages — under the **`tokenzyme`**
-  schema.
+**This service creates no tables.** Core's Prisma migrations define the whole schema,
+including the on-chain tables this indexer fills — `accounts`, `tokens`, `trades`,
+`social_media`, `dex_liquidities`. The indexer only writes rows into them.
 
-That is why `DB_URL` here has no `?schema=` parameter while core's does. Neither
-service migrates the other's tables. If you point them at different databases, the
-API will come up but every token query will return nothing.
+That means **you must apply core's migrations before starting the indexer**
+(`yarn prisma:migrate:deploy` in `tokenzyme-core`), or it has nowhere to write.
+
+Both services must resolve to the same schema. Subsquid ignores any `?schema=`
+parameter in `DB_URL` and always uses `public`, so core's `DB_URL` must not carry one
+either — otherwise core reads from one schema while this service writes to another,
+and every token query silently returns nothing.
 
 ## Getting started
 
@@ -142,7 +143,9 @@ Then run it:
 yarn start:dev
 ```
 
-TypeORM creates its tables on first run. There is no separate migration step.
+There is no migration step here. The tables must already exist, created by
+`yarn prisma:migrate:deploy` in
+[`tokenzyme-core`](https://github.com/tokenzyme/tokenzyme-core).
 
 To index against a local chain, run a mainnet fork from
 [`tokenzyme-contracts`](https://github.com/tokenzyme/tokenzyme-contracts)
