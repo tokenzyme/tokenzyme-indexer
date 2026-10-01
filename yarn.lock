@@ -873,11 +873,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@subsquid/typeorm-config@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "@subsquid/typeorm-config@npm:4.1.1"
+"@subsquid/typeorm-config@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "@subsquid/typeorm-config@npm:4.2.0"
   dependencies:
-    "@subsquid/logger": "npm:^1.3.3"
+    "@subsquid/logger": "npm:^1.6.0"
     "@subsquid/util-internal-ts-node": "npm:^0.0.0"
     "@subsquid/util-naming": "npm:^1.3.0"
   peerDependencies:
@@ -885,20 +885,20 @@ __metadata:
   peerDependenciesMeta:
     typeorm:
       optional: true
-  checksum: 10c0/7bb18fe1dbdd5e25628e31bf51dd61bdc06ea8629a9a74ebb5f713532b2a59f8339bb0f61b52acedc4f7853b8b828fc8c083d2fab6e405f58675e1a6cc30687c
+  checksum: 10c0/afa1312e5fbf9928e65c6a4a68457d5978607d052bfecd5eb53469acabf80c318273dbb12049d23f673d64020ece0a91e68cf2a01be18ac3ca570c5debd54f42
   languageName: node
   linkType: hard
 
-"@subsquid/typeorm-store@npm:1.9.1":
-  version: 1.9.1
-  resolution: "@subsquid/typeorm-store@npm:1.9.1"
+"@subsquid/typeorm-store@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@subsquid/typeorm-store@npm:1.9.2"
   dependencies:
-    "@subsquid/typeorm-config": "npm:^4.1.1"
-    "@subsquid/util-internal": "npm:^3.3.0"
+    "@subsquid/typeorm-config": "npm:^4.2.0"
+    "@subsquid/util-internal": "npm:^3.3.1"
   peerDependencies:
     "@subsquid/big-decimal": ^1.0.0
     typeorm: ^0.3.17
-  checksum: 10c0/6b8376caa0aced962e2b3d3b6174e8177af8f6cba63c5653a1e60828484abe682ad169cc0d5726afcea1a82f18c06cb616af0415aa3f61f705b79a5a73ce52e9
+  checksum: 10c0/01798e00cb75fbdaa7377db6ea996316e8ce6d06a806b92d41d1c11f51fcb5e1ba47294ac9d31e39f7292b6fe2bb836fec600e5e2e1d62f0a4415e5b084f09e0
   languageName: node
   linkType: hard
 
@@ -1254,10 +1254,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.17.24":
-  version: 4.17.24
-  resolution: "@types/lodash@npm:4.17.24"
-  checksum: 10c0/b72f60d4daacdad1fa643edb3faba204c02a01eb1ac00a83ff73496a6d236fc55e459c06106e8ced42277dba932d087d8fc090f8de4ef590d3f91e6d6f7ce85a
+"@types/lodash@npm:4.17.25":
+  version: 4.17.25
+  resolution: "@types/lodash@npm:4.17.25"
+  checksum: 10c0/ca2049f16bf527e04d6e27702e3912a484faaff587de77a5c58e0d243b9292a655e1d7f7e5bdf2ffdf49a76da10673097f8dd4901990679058d47ccd99051877
   languageName: node
   linkType: hard
 
@@ -1293,12 +1293,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.13.3":
-  version: 24.13.3
-  resolution: "@types/node@npm:24.13.3"
+"@types/node@npm:24.19.0":
+  version: 24.19.0
+  resolution: "@types/node@npm:24.19.0"
   dependencies:
-    undici-types: "npm:~7.18.0"
-  checksum: 10c0/a5bc08f49b9581dcdca90e02cd77197a3c799840807664942e5cd5161a553d4d2ae8064f7e3294410d748d7d098b5c1848be7fa50c06f29c4193ab16be4e59eb
+    undici-types: "npm:>=7.24.0 <7.24.7"
+  checksum: 10c0/f38afca05eb323a01243aa06a4cb8e69ef3423e1115e4464a211c6556156c024bb80fadeb7e3691802a247e7e653b70bad8c528b291153e4f48fccecc6159735
   languageName: node
   linkType: hard
 
@@ -2008,7 +2008,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"base64id@npm:2.0.0, base64id@npm:~2.0.0":
+"base64id@npm:2.0.0":
   version: 2.0.0
   resolution: "base64id@npm:2.0.0"
   checksum: 10c0/6919efd237ed44b9988cbfc33eca6f173a10e810ce50292b271a1a421aac7748ef232a64d1e6032b08f19aae48dce6ee8f66c5ae2c9e5066c82b884861d4d453
@@ -5068,10 +5068,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg-protocol@npm:^1.15.0":
-  version: 1.15.0
-  resolution: "pg-protocol@npm:1.15.0"
-  checksum: 10c0/f1acad1e693d23ce70f8a5fec108cb960d6b8546b3a3fb2cf9113211069ef0f8890e2cc26b5f94e11bf81ff6d851b11c0643de12327cd07e0d1127ae1cb80791
+"pg-protocol@npm:^1.16.0":
+  version: 1.16.1
+  resolution: "pg-protocol@npm:1.16.1"
+  checksum: 10c0/84e8bf05c3548c8ffcad29247c075f8f1cf477600c92a7eb0ab27c6c4cbdbe1280433582bfba91f629b1f68bcaf4ae26436a898f430e884d7887543931e8ade6
   languageName: node
   linkType: hard
 
@@ -5088,14 +5088,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pg@npm:8.22.0":
-  version: 8.22.0
-  resolution: "pg@npm:8.22.0"
+"pg@npm:8.23.0":
+  version: 8.23.0
+  resolution: "pg@npm:8.23.0"
   dependencies:
     pg-cloudflare: "npm:^1.4.0"
     pg-connection-string: "npm:^2.14.0"
     pg-pool: "npm:^3.14.0"
-    pg-protocol: "npm:^1.15.0"
+    pg-protocol: "npm:^1.16.0"
     pg-types: "npm:2.2.0"
     pgpass: "npm:1.0.5"
   peerDependencies:
@@ -5106,7 +5106,7 @@ __metadata:
   peerDependenciesMeta:
     pg-native:
       optional: true
-  checksum: 10c0/f26fe81c8146b802ac58b2a67570ab4f64cbd57d0752d0a6d1b2b1d12168adb241948e6129301b771a359bede6767181c5ac1a584a36bcfcd38ffe955237ee26
+  checksum: 10c0/11ce12a71b4239588c18f078531c378d5bcdbcb9ea892e080a6e71f91aaece2b4b8fd93ee5777f94210f9258ff56161f8ed1a45050c32d295aaca037bba12ee8
   languageName: node
   linkType: hard
 
@@ -5277,12 +5277,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.6":
-  version: 3.9.6
-  resolution: "prettier@npm:3.9.6"
+"prettier@npm:3.9.9":
+  version: 3.9.9
+  resolution: "prettier@npm:3.9.9"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/9f7ddae234035868f3daab3dc34e6de7e54622185afb017378029f0c09a9c023248ccf6f34def0b17a0538e18c47aa1b3188bab72965d1bf735919baa0747e99
+  checksum: 10c0/d50ea2537b2ff7dbd5088a214f4d936484e55c665cea2185b477a55b0770be55f3b156a71f63a9a639def6b334667bb327139dc85f2a1041c0a34752cdc74647
   languageName: node
   linkType: hard
 
@@ -5806,18 +5806,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socket.io@npm:4.8.3":
-  version: 4.8.3
-  resolution: "socket.io@npm:4.8.3"
+"socket.io@npm:4.8.4":
+  version: 4.8.4
+  resolution: "socket.io@npm:4.8.4"
   dependencies:
     accepts: "npm:~1.3.4"
-    base64id: "npm:~2.0.0"
     cors: "npm:~2.8.5"
     debug: "npm:~4.4.1"
     engine.io: "npm:~6.6.0"
     socket.io-adapter: "npm:~2.5.2"
     socket.io-parser: "npm:~4.2.4"
-  checksum: 10c0/1f7c4118cdbcb346e63db9d8fd657c3dc5caf148404762ed98ac14c4e7b74984a65fe51657bfe1696adcf7c168d1a3aad4a26b52864ce8491556f38218598f0b
+  checksum: 10c0/08aa50d99754e223732ab29523573a27afd00013ae4da91a31dcdf3dc1d3ed49e703b70d12e66a6f3d4ce6b84a170a9432533dab21864eded916dec019275989
   languageName: node
   linkType: hard
 
@@ -6139,9 +6138,9 @@ __metadata:
     "@subsquid/evm-processor": "npm:1.30.1"
     "@subsquid/evm-typegen": "npm:4.6.0"
     "@subsquid/typeorm-codegen": "npm:2.4.0"
-    "@subsquid/typeorm-store": "npm:1.9.1"
-    "@types/lodash": "npm:4.17.24"
-    "@types/node": "npm:24.13.3"
+    "@subsquid/typeorm-store": "npm:1.9.2"
+    "@types/lodash": "npm:4.17.25"
+    "@types/node": "npm:24.19.0"
     "@types/ws": "npm:8.18.1"
     "@typescript-eslint/eslint-plugin": "npm:7.18.0"
     "@typescript-eslint/parser": "npm:7.18.0"
@@ -6155,12 +6154,12 @@ __metadata:
     eslint-plugin-prettier: "npm:5.5.6"
     ethers: "npm:6.17.0"
     lodash: "npm:4.18.1"
-    pg: "npm:8.22.0"
+    pg: "npm:8.23.0"
     pino: "npm:9.14.0"
     pino-pretty: "npm:13.1.3"
-    prettier: "npm:3.9.6"
+    prettier: "npm:3.9.9"
     reflect-metadata: "npm:0.2.2"
-    socket.io: "npm:4.8.3"
+    socket.io: "npm:4.8.4"
     ts-node: "npm:10.9.2"
     typeorm: "npm:0.3.31"
     typescript: "npm:5.9.3"
@@ -6469,6 +6468,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:>=7.24.0 <7.24.7":
+  version: 7.24.6
+  resolution: "undici-types@npm:7.24.6"
+  checksum: 10c0/d9cd8befb643ac904615c280a095ba4240531f6bb4a5e75a22a7483630ca8d3f1016d2ab6ace6ceda1f63b3a2db2fe037fafe121d6917a0187573aa548ff78ca
+  languageName: node
+  linkType: hard
+
 "undici-types@npm:~6.19.2":
   version: 6.19.8
   resolution: "undici-types@npm:6.19.8"
@@ -6480,13 +6486,6 @@ __metadata:
   version: 6.21.0
   resolution: "undici-types@npm:6.21.0"
   checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~7.18.0":
-  version: 7.18.2
-  resolution: "undici-types@npm:7.18.2"
-  checksum: 10c0/85a79189113a238959d7a647368e4f7c5559c3a404ebdb8fc4488145ce9426fcd82252a844a302798dfc0e37e6fb178ff481ed03bc4caf634c5757d9ef43521d
   languageName: node
   linkType: hard
 
